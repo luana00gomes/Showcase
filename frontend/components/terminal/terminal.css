@@ -1,0 +1,62 @@
+.code-terminal {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  width: 36rem;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #333;
+}
+
+.code-terminal-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.code-terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.code-terminal-dot.red {
+  background-color: #ff5f57;
+}
+
+.code-terminal-dot.yellow {
+  background-color: #ffbd2e;
+}
+
+.code-terminal-dot.green {
+  background-color: #27c93f;
+}
+
+.code-terminal-content {
+  white-space: pre-wrap; /* Allows wrapping of long lines */
+  margin: 0;
+}
+
+
+.code-terminal-fixed {
+  display: flex;
+  justify-content: start;
+}
+
+.code-terminal-user {
+  color: violet; /* Custom color for the user prompt */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.code-terminal-input {
+  color: rgba(255, 255, 255, 0.596); /* Custom color for the user prompt */
+  font-size: 24px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
