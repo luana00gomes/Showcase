@@ -12,49 +12,33 @@ export const siteConfig = {
     },
     {
       label: "Computer Vision",
-      href: "/pricing",
+      href: "/blog",
     },
     {
       label: "Keras",
       href: "/blog",
     },
+    {
+      label: "Network",
+      href: "/blog",
+    },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Computer Vision",
+      href: "/blog",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Keras",
+      href: "/blog",
     },
     {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Network",
+      href: "/blog",
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
+    github: "https://github.com/luana00gomes",
     linkedin: "https://www.linkedin.com/in/luana-g/",
     whatsApp: "https://w.app/f8iQ3s",
     sponsor: "https://patreon.com/jrgarciadev",
