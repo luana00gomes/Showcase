@@ -1,7 +1,6 @@
 "use client";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
 import Image from "next/image";
 
@@ -65,18 +64,18 @@ const webSkills = [
   }
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="flex flex-row items-center justify-center gap-4 py-9">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 py-9">
         <PresentationText />
           <Image
             width={300}
             height={300}
             alt="Personal picture"
             src="/personal_pic.jpeg"
-            style={{borderRadius: "100px", height: '200px'}}
+            style={{borderRadius: "100px", height: '200px', width: '200px'}}
           />
       </div>
 
-      <div className="mt-8">
+      <div className="w-full">
         <CodeTerminal>
           <TypingText />
         </CodeTerminal>
@@ -105,7 +104,7 @@ const webSkills = [
           </Link> 
         </div>
       </div>
-      <div style={{marginTop: '50px', width: '55rem'}}>
+      <div className='w-full' style={{marginTop: '50px'}}>
         <ChipArray items={webSkills} />
       </div>
 

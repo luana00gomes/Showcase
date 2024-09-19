@@ -51,8 +51,10 @@ export const Navbar = () => {
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="div" className="gap-3 max-w-fit">
-          <Logo />
-          <p className="font-bold text-inherit">LUANA GOMES</p>
+          <Link aria-label="Github" href='/' className="text-inherit">
+            <Logo />
+            <p className="font-bold text-inherit">LUANA GOMES</p>
+          </Link>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
@@ -80,7 +82,7 @@ export const Navbar = () => {
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
-          <Link isExternal aria-label="Github" href={siteConfig.links.linkedin}>
+          <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
             <LinkedinIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
