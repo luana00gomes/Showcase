@@ -1,6 +1,5 @@
 "use client";
 import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
 import { button as buttonStyles } from "@nextui-org/theme";
 import Image from "next/image";
 
@@ -10,6 +9,7 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import TypingText from "@/components/typingText/TypingText";
 import CodeTerminal from "@/components/terminal/Terminal"
+import ExperienceSection from "@/components/experienceSection/experienceSection"
 
 
 export default function Home() {
@@ -63,8 +63,8 @@ const webSkills = [
       </div>
   }
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 py-9">
+    <section className="flex flex-col items-center justify-center gap-4">
+      <div className="m-1 flex flex-col lg:flex-row items-center justify-center gap-4 py-9 sm:py-0">
         <PresentationText />
           <Image
             width={300}
@@ -108,12 +108,16 @@ const webSkills = [
         <ChipArray items={webSkills} />
       </div>
 
-      <div className="mt-8">
-        <Snippet hideCopyButton hideSymbol variant="bordered">
-          <span>
-          Committed to delivering cutting-edge solutions that drive success.
-          </span>
-        </Snippet>
+      
+      <br />
+      <div className="w-full">
+        <ExperienceSection />
+      </div>
+
+      <div className="mt-8 border-1 rounded-full">
+          <p className="m-1 pr-2 pl-2 text-center">
+            Committed to delivering cutting-edge solutions that drive success.
+          </p>
       </div>
     </section>
   );
