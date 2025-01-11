@@ -101,23 +101,23 @@ export default function ExperienceSection() {
         <section className="experience-section">
             <h2 className={title({ size: "lg" })}>Career Highlights</h2>
                 
-            <ul class="timeline">
+            <ul className="timeline">
                 {experiences.map((exp, index)=>{
                     return  <li key={index} >
                         <div className={`${index % 2 === 0 ? "direction-r" : "direction-l"}`}>
-                            <div class="flag-wrapper">
-                                <span class={`flag ${exp.highlight ? 'highlight': ''} `}>{exp.title}</span>
-                                <span class="time-wrapper"><span class="time">{exp.period}</span></span>
+                            <div className="flag-wrapper">
+                                <span className={`flag ${exp.highlight ? 'highlight': ''} `}>{exp.title}</span>
+                                <span className="time-wrapper"><span className="time">{exp.period}</span></span>
                             </div>
                             {exp.company&&
                                 <>
                                     <br />
-                                    <div class='company-wrapper'>
+                                    <div className='company-wrapper'>
                                         <span>{exp.company}</span>
                                     </div>
                                 </>
                             }
-                            <div class='desc'>
+                            <div className='desc'>
                                 <ul className="experience-details list-disc ml-5 mt-2">
                                     {exp.details.map((detail, index) => (
                                         <li key={index}>{detail}</li>
