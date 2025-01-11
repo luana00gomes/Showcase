@@ -41,7 +41,6 @@ export const siteConfig = {
     github: "https://github.com/luana00gomes",
     linkedin: "https://www.linkedin.com/in/luana-g/",
     whatsApp: "https://w.app/f8iQ3s",
-    sponsor: "https://patreon.com/jrgarciadev",
     ufsc: "https://en.ufsc.br/"
   },
 };
