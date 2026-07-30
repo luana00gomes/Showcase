@@ -40,7 +40,7 @@ const webSkills = [
 ];
 
   const PresentationText = () =>{
-    return <div className="inline-block w-xl text-start justify-center">
+    return <div className="w-full max-w-xl text-start">
         <h5 className={title({size: 'sm'})}>Software Developer&nbsp;</h5>
         <h5 className={title({size: 'sm',  color: "violet"})}>with 3 years of experience. &nbsp;</h5>
         <h5 className={title({size: 'sm'})}>Known for innovative problem-solving,&nbsp;</h5>
@@ -64,14 +64,14 @@ const webSkills = [
   }
   return (
     <section className="flex flex-col items-center justify-center gap-4">
-      <div className="m-1 flex flex-col lg:flex-row items-center justify-center gap-4 py-9 sm:py-0">
+      <div className="m-1 flex flex-col lg:flex-row items-center justify-center gap-4 py-6 lg:py-9">
         <PresentationText />
           <Image
-            width={300}
-            height={300}
+            width={200}
+            height={200}
             alt="Personal picture"
             src="/personal_pic.jpeg"
-            style={{borderRadius: "100px", height: '200px', width: '200px'}}
+            className="rounded-[100px] max-w-full"
           />
       </div>
 
@@ -82,7 +82,7 @@ const webSkills = [
       </div>
 
       <div className="mt-8">
-        <div className="flex gap-3">
+        <div className="flex flex-wrap gap-3 justify-center">
           <Link
             isExternal
             className={buttonStyles({
@@ -104,7 +104,7 @@ const webSkills = [
           </Link> 
         </div>
       </div>
-      <div className='w-full' style={{marginTop: '50px'}}>
+      <div className="w-full mt-12">
         <ChipArray items={webSkills} />
       </div>
 

@@ -268,15 +268,42 @@
   .direction-l .desc,
   .direction-r .desc {
     position: relative;
-    margin: 1em 1em 0 1em;
+    margin: 1em 0.5em 0 0.5em;
     padding: 1em;
-    
     z-index: 15;
-  } 
-
-  .direction-l .desc,
-  .direction-r .desc {
-    margin: 1em 4em 0 4em;
   }
 
+  @media (min-width: 480px) {
+    .direction-l .desc,
+    .direction-r .desc {
+      margin: 1em 4em 0 4em;
+    }
+  }
+
+}
+
+/* ================ Dark Mode Overrides ================ */
+
+.dark .time-wrapper {
+  color: #e0e0e0;
+}
+
+.dark .time {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.dark .direction-l,
+.dark .direction-r {
+  color: #e0e0e0;
+}
+
+.dark .desc {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.dark .company-wrapper {
+  background: radial-gradient(circle, #2a2a2a 80%, #b249f8 100%);
+  color: #e0e0e0;
 }

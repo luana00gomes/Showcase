@@ -6,6 +6,10 @@ const nextConfig = {
     loader: 'custom',
     loaderFile: './imageLoader.js',
   },
+  experimental: {
+    workerThreads: false,
+    cpus: 1,
+  },
 }
 
 module.exports = nextConfig

@@ -56,13 +56,13 @@
 
 .code-terminal-user {
   color: violet;
-  font-size: 24px;
+  font-size: clamp(14px, 3.5vw, 24px);
   font-weight: bold;
 }
 
 .code-terminal-input {
   color: rgba(255, 255, 255, 0.596);
-  font-size: 24px;
+  font-size: clamp(14px, 3.5vw, 24px);
   margin-left: 10px;
   margin-bottom: 50px;
 }

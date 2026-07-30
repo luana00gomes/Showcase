@@ -16,7 +16,7 @@ const BorderedChip = styled(Chip)(({ theme }) => ({
 
 const ChipArray = ({ items }) => {
   return (
-    <div style={{height: 'auto', display: 'ruby-text'}}>
+    <div className="flex flex-wrap gap-1">
       {items.map((item, index) => (
         <BorderedChip
           key={index}
