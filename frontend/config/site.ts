@@ -1,5 +1,3 @@
-import { WhatsApp } from "@mui/icons-material";
-
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -10,31 +8,11 @@ export const siteConfig = {
       label: "Home",
       href: "/",
     },
-    {
-      label: "Computer Vision",
-      href: "/blog",
-    },
-    {
-      label: "Keras",
-      href: "/blog",
-    },
-    {
-      label: "Network",
-      href: "/blog",
-    },
   ],
   navMenuItems: [
     {
-      label: "Computer Vision",
-      href: "/blog",
-    },
-    {
-      label: "Keras",
-      href: "/blog",
-    },
-    {
-      label: "Network",
-      href: "/blog",
+      label: "Home",
+      href: "/",
     },
   ],
   links: {

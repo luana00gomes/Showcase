@@ -5,26 +5,30 @@ import { Google } from "@mui/icons-material";
 export default function ExperienceSection() {
     const experiences = [
         {
-            period: "2/2024 - current",
+            period: "3/2025 - present",
+            title: "Custom Software Engineer",
+            highlight: true,
+            company: "Accenture",
+            details: [
+                "Architecture and development of an Anvisa-licensed auditable system for prescription, dispensation and traceability of controlled medications.",
+                "Integration with alarm systems and hierarchical-level authentication.",
+                "Complex large-scale data migration (MySQL → PostgreSQL) ensuring integrity and persistence.",
+                "Full-stack HMI development for factory tablets with PLC and UR robot integration.",
+                "SAP/ERP integration enabling real-time production monitoring.",
+            ],
+            techStack: ["Python", "React", "TypeScript", "PostgreSQL", "MySQL", "Docker", "SAP", "PLC", "Scrum"]
+        },
+        {
+            period: "2/2024 - 1/2025",
             title: "Full Stack Developer",
             highlight: true,
             company: "Taon Delivery",
             details: [
-                "Designed and maintained backend, frontend, and bot features, ensuring seamless operations across platforms.",
+                "Designed and maintained backend, frontend and bot features ensuring seamless operations across platforms.",
                 "Integrated real-time notifications using Socket.io for efficient alarm updates.",
-                "Enhanced system reliability and responsiveness with efficient data processing and updates.",
-                "Integrated Google Maps API services for places, marker and geocoding."               
+                "Integrated Google Maps API services for places, markers and geocoding.",
             ],
-            techStack: [
-                "React",
-                "Socket.io",
-                "Node.js",
-                "MongoDB",
-                "Google API",
-                "JavaScript",
-                "TypeScript",
-            ]
-
+            techStack: ["React", "Socket.io", "Node.js", "MongoDB", "Google API", "TypeScript"]
         },
         {
             period: "10/2024 - 12/2024",
@@ -32,30 +36,30 @@ export default function ExperienceSection() {
             company: "My Smart Broker",
             details: [
                 "Delivered a production-ready platform with refined UI/UX for consistent design and improved user experience.",
-                "Enhanced admin capabilities by implementing user-specific permissions for robust access control.",
-                "Led comprehensive integration and usability testing to ensure platform readiness for deployment.",
-                "Integrated Gmail messaging API",
+                "Implemented user-specific permissions for robust access control.",
+                "Led integration and usability testing to ensure platform readiness for deployment.",
+                "Integrated Gmail messaging API.",
             ],
-            techStack: ["TypeScript", "React", "Next", "Next-Auth", "Prisma", "PostgreSQL", "Google API",]
+            techStack: ["TypeScript", "React", "Next.js", "Next-Auth", "Prisma", "PostgreSQL", "Google API"]
         },
         {
             period: "9/2023 - 12/2023",
-            title: "Shipbroker Platform",
+            title: "Shipbroker Platform — MVP",
             company: "My Smart Broker",
             details: [
                 "Developed an MVP for a shipbroker platform based on client specifications.",
                 "Integrated secure login using Next-Auth.",
-                "Built core platform components, focusing on scalability and maintainability for future enhancements."
+                "Built core platform components focusing on scalability and maintainability.",
             ],
-            techStack: ["JavaScript", "TypeScript", "React", "Next", "Next-Auth", "Prisma", "PostgreSQL"]
-        },        
+            techStack: ["JavaScript", "TypeScript", "React", "Next.js", "Next-Auth", "Prisma", "PostgreSQL"]
+        },
         {
             period: "6/2023 - 9/2023",
             title: "Booking System for Restaurant",
             details: [
                 "Automated the restaurant's table reservation system, enhancing customer experience and efficiency.",
-                "Translated client expectations into technical specifications, implementing an interactive reservation system.",
-                "Modernized and optimized the website, aligning it with brand values."
+                "Translated client expectations into technical specifications for an interactive reservation system.",
+                "Modernized and optimized the website, aligning it with brand values.",
             ],
             techStack: ["Python", "Django", "JavaScript", "CSS", "HTML"]
         },
@@ -63,37 +67,25 @@ export default function ExperienceSection() {
             period: "3/2023 - 6/2023",
             title: "Enterprise Diagnostics with ChatGPT",
             details: [
-                "Established a secure login system using Flask_login for user authentication.",
-                "Developed real-time chat functionality with Flask_socketio.",
+                "Established a secure login system using Flask-Login for user authentication.",
+                "Developed real-time chat functionality with Flask-SocketIO.",
                 "Designed prompts for GPT-generated questions and analyzed responses.",
-                "Generated reports from chat history to provide insights."
+                "Generated reports from chat history to provide enterprise insights.",
             ],
-            techStack: ["Python", "Flask", "Flask_login", "Flask_socketio", "MySQLAlchemy", "OpenAI", "GPT"]
+            techStack: ["Python", "Flask", "Flask-Login", "Flask-SocketIO", "SQLAlchemy", "OpenAI", "MySQL"]
         },
         {
             period: "1/2022 - 1/2023",
             highlight: true,
-            title: "Internship - Full Stack Development",
+            title: "Computer Vision Intern",
             company: "Pollux, part of Accenture",
             details: [
-                "Worked on a traceability project for medicines focused on Computer Vision and image processing.",
-                "Implemented image processing techniques including datamatrix reading, grading, filters, and OCR.",
-                "Created datasets for training ML models, enhancing data manipulation skills.",
-                "Managed industrial cameras, developing scripts for capture and integration with systems."
+                "Pharmaceutical traceability project using Computer Vision and image processing.",
+                "Developed tools for datamatrix reading (C++), image filters (OpenCV) and OCR (Tesseract, Keras).",
+                "Industrial camera management with Python, C++ and RTA.",
+                "Dataset creation and cleaning for packaging quality validation.",
             ],
-            techStack: [
-                "Python",
-                "PostgreSQL",
-                "OpenCV",
-                "CV2",
-                "OpenEvision",
-                "Tesseract",
-                "Keras",
-                "Git",
-                "Linux",
-                "JIRA",
-                "Scrum"
-            ]
+            techStack: ["Python", "C++", "OpenCV", "Tesseract", "Keras", "PostgreSQL", "Linux", "Git", "Scrum"]
         },
     ];
 

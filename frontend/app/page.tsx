@@ -10,6 +10,9 @@ import { GithubIcon } from "@/components/icons";
 import TypingText from "@/components/typingText/TypingText";
 import CodeTerminal from "@/components/terminal/Terminal"
 import ExperienceSection from "@/components/experienceSection/experienceSection"
+import { VisitorCounter } from "@/components/counter"
+import ProjectsSection from "@/components/projectsSection/projectsSection"
+import IIoTSection from "@/components/iiotSection/iiotSection"
 
 
 export default function Home() {
@@ -54,7 +57,7 @@ const webSkills = [
             href={siteConfig.links.ufsc}
             color="foreground"
             >
-            <strong> (UFSC) </strong>
+            <strong> (UFSC, 2026) </strong>
           </Link>
         </h5>
           
@@ -81,7 +84,7 @@ const webSkills = [
         </CodeTerminal>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 flex flex-col items-center">
         <div className="flex flex-wrap gap-3 justify-center">
           <Link
             isExternal
@@ -90,9 +93,9 @@ const webSkills = [
               radius: "full",
               variant: "shadow",
             })}
-            href={siteConfig.links.whatsApp}
+            href={siteConfig.links.linkedin}
             >
-            Request quotes
+            Connect on LinkedIn
           </Link>
           <Link
             isExternal
@@ -101,7 +104,14 @@ const webSkills = [
             >
             <GithubIcon size={20} />
             GitHub
-          </Link> 
+          </Link>
+          <a
+            href="/Showcase/cv.pdf"
+            download="Luana_Gomes_CV.pdf"
+            className={buttonStyles({ variant: "bordered", radius: "full" })}
+          >
+            ↓ Download CV
+          </a>
         </div>
       </div>
       <div className="w-full mt-12">
@@ -109,8 +119,11 @@ const webSkills = [
       </div>
 
       
-      <br />
-      <div className="w-full">
+      <ProjectsSection />
+
+      <IIoTSection />
+
+      <div className="w-full mt-16">
         <ExperienceSection />
       </div>
 
@@ -119,6 +132,9 @@ const webSkills = [
             Committed to delivering cutting-edge solutions that drive success.
           </p>
       </div>
+
+      <VisitorCounter />
+      
     </section>
   );
 }

@@ -1,14 +1,22 @@
 "use client";
 
-import { useState } from "react";
-import { Button } from "@nextui-org/button";
+import { useEffect, useState } from "react";
 
-export const Counter = () => {
-  const [count, setCount] = useState(0);
+export const VisitorCounter = () => {
+  const [count, setCount] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetch("https://api.counterapi.dev/v1/luana00gomes-showcase/visits/up")
+      .then((r) => r.json())
+      .then((data) => setCount(data.count ?? null))
+      .catch(() => {});
+  }, []);
+
+  if (count === null) return null;
 
   return (
-    <Button radius="full" onPress={() => setCount(count + 1)}>
-      Count is {count}
-    </Button>
+    <p className="text-xs text-default-400 mt-2">
+      👁 {count.toLocaleString("en-US")} visits
+    </p>
   );
 };

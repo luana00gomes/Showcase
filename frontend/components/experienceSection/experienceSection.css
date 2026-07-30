@@ -175,6 +175,10 @@
     padding: 4em 0 1em 0;
   }
 
+  .timeline:before {
+    display: none;
+  }
+
   .timeline li {
     padding: 2em 0;
   }
