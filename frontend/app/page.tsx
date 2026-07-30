@@ -13,6 +13,7 @@ import ExperienceSection from "@/components/experienceSection/experienceSection"
 import { VisitorCounter } from "@/components/counter"
 import ProjectsSection from "@/components/projectsSection/projectsSection"
 import IIoTSection from "@/components/iiotSection/iiotSection"
+import GitHubStats from "@/components/githubStats/githubStats"
 
 
 export default function Home() {
@@ -122,6 +123,8 @@ const webSkills = [
       <ProjectsSection />
 
       <IIoTSection />
+
+      <GitHubStats />
 
       <div className="w-full mt-16">
         <ExperienceSection />
